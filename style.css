@@ -9,33 +9,58 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 button {
     font-size: 20px;
     letter-spacing: 1px;
     width: 100px;
+    background:violet;
+    border-color: gold;
 }
 
+
 .circle {
-    height: 50vh;
-    width: 50vw;
+    height: 100%;
+    width: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
     place-content: center;
     margin: 0 auto;
-    background: black;
+    background: rgba(5, 55, 255, 0.1);
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(25, 5, 25, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
 }
 
+/* @keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+     25%{
+        transform: translateY(10px);
+    }
+     50%{
+        transform: translateY(0px);
+    }
+     75%{
+        transform: translateY(-10px);
+    }
+     100%{
+        transform: translateY(0px);
+    }
+} */
+
 .rotate1 {
-    width: 5em;
-    height: 5em;
+    width: 7em;
+    height: 7em;
     border-radius: 50%;
     border-top: 5px solid red;
     border-bottom: 5px solid burlywood;
     animation: round 1s linear infinite;
+    /* animation: bounce 1s linear infinite; */
     background: orange;
     z-index: 1;
 }
@@ -54,14 +79,14 @@ button {
 
 .stand {
     display: inline block;
-    height: 10rem;
+    height: 15rem;
     width: 1em;
     width: 0 auto;
     background-color: white;
     position: absolute;
     margin: 0 auto;
-    top: 10rem;
-    border-radius: 0 0 20px 10px;
+    top: 22rem;
+    border-radius: 0 0 20px 20px;
 }
 
 
