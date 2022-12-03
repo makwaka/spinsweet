@@ -1,0 +1,75 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+button {
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 100px;
+}
+
+.circle {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    margin: 0 auto;
+    background: black;
+}
+
+.rotate1 {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border-top: 5px solid red;
+    border-bottom: 5px solid burlywood;
+    animation: round 1s linear infinite;
+    background: orange;
+    z-index: 1;
+}
+
+
+@keyframes round {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+
+.stand {
+    display: inline block;
+    height: 10rem;
+    width: 1em;
+    width: 0 auto;
+    background-color: white;
+    position: absolute;
+    margin: 0 auto;
+    top: 10rem;
+    border-radius: 0 0 20px 10px;
+}
+
+
+.random-btn {
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
